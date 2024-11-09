@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - NexaCart</title>
+  <script defer src="checkout.js"></script>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header .header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main {
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h2 {
+  font-size: 24px;
+  color: #4CAF50;
+  margin-bottom: 16px;
+}
+
+main p {
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1em;
+}
+button:hover {
+  background-color: #45a049;
+}
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1.5em 0;
+  text-align: center;
+  margin-top: auto;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-info a {
+  color: #ff9800;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header">
+      <img src="images/logo.png" alt="NexaCart Logo" class="logo">
+      <h1>Checkout</h1>
+    </div>
+  </header>
+
+  <main>
+    <h2>Your Order has been placed!</h2>
+    <p>Thank you for shopping with NexaCart. Your items will be processed shortly.</p>
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="images/logo.png" alt="NexaCart Logo" class="footer-logo" style="width: 100px; height: auto; margin-right: 10px;">
+      <div class="contact-info">
+        <h4>Contact Us</h4>
+        <p>Email: <a href="mailto:prashanth.nv159@gmail.com">prashanth.nv159@gmail.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+91 9xxxxxxx22</a></p>
+      </div>
+      <p>&copy; 2024 NexaCart</p>
+    </div>
+  </footer>
+
+</body>
+</html>

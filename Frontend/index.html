@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexaCart - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  
+  <header>
+    <div class="header-left">
+      <img src="images/logo.png" alt="NexaCart Logo" class="logo" style="width: 100px; height: auto; margin-right: 10px;">
+      <h1>NexaCart</h1>
+    </div>
+    
+    <div class="header-center">
+      <input type="text" id="search-bar" placeholder="Search for products...">
+      <button id="search-icon" onclick="searchProduct()">🔍</button>
+    </div>
+    
+    <div class="header-right">
+      <a href="account.html" onclick="checkAccountStatus()">Account</a>
+      
+      <div class="dropdown">
+        <button class="dropdown-btn">Categories</button>
+        <div class="dropdown-content">
+          <a href="#" onclick="filterCategory('Electronics')">Electronics</a>
+          <a href="#" onclick="filterCategory('Books')">Books</a>
+          <a href="#" onclick="filterCategory('Mens clothing')">Men's clothing</a>
+          <a href="#" onclick="filterCategory('Womens Clothing')">Women's clothing</a>
+          <a href="#" onclick="filterCategory('Jewelery')">Jewelery</a>
+        </div>
+      </div>
+
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="cart.html">🛒 Cart </a>
+    </div>
+  </header>
+
+  
+  <main>
+    <h2>Our Products</h2>
+    <div class="product-list" id="product-list">
+      <!-- Products will be populated here -->
+    </div>
+  </main>
+
+<footer>
+  <div class="footer-content">
+    <img src="images/logo.png" alt="NexaCart Logo" class="footer-logo" style="width: 100px; height: auto; margin-right: 10px;" >
+    <h2>NexaCart</h2>
+    <div class="contact-info">
+      <h4>Contact Us</h4>
+      <p>Email: <a href="mailto:your-prashanth.nv159@gmail.com.com">prashanth.nv159@gmail.com</a></p>
+      <p>Phone: <a href="tel:+1234567890">+91 9XXXX XXX22</a></p>
+    </div>
+  </div>
+  <p>&copy; 2024 NexaCart. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>

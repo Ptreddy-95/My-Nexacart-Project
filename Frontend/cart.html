@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - NexaCart</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header .header {
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Home button {
+  background-color: white;
+  color: #4CAF50;
+  border: none;
+  margin-left: 40px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#Home button:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+main {
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h2 {
+  color: #4CAF50;
+  margin-bottom: 16px;
+}
+
+#cartItems {
+  width: 90%;
+  max-width: 600px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+  width: 80px;
+  height: auto;
+  margin-right: 16px;
+  border-radius: 5px;
+}
+.cart-item button {
+  margin-left: auto;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-item button:hover {
+  background-color: #d32f2f;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1.5em 0;
+  text-align: center;
+  margin-top: auto;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-info a {
+  color: #ff9800;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header">
+      <h1>Welcome to NexaCart</h1>
+      <div id="Home">
+        <button onclick="window.location.href='index.html'">Home </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h2>Your Cart</h2>
+    <div id="cartItems">
+      <!-- Cart items will be displayed here dynamically -->
+    </div>
+    <button onclick="checkout()">Proceed to Checkout</button>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="images/logo.png" alt="NexaCart Logo" class="footer-logo" style="width: 100px; height: auto; margin-right: 10px;">
+      <div class="contact-info">
+        <h4>Contact Us</h4>
+        <p>Email: <a href="mailto:prashanth.nv159@gmail.com">prashanth.nv159@gmail.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+91 9xxxxxxx22</a></p>
+      </div>
+      <p>&copy; 2024 NexaCart</p>
+    </div>
+  </footer>
+
+</body>
+</html>
