@@ -15,7 +15,7 @@ let allProducts = [];
 // Load products from the backend API
 async function loadProducts() {
   try {
-    const response = await fetch('http://localhost:5000/api/products'); // Ensure backend is running on this URL
+    const response = await fetch('https://my-nexacart-project-3.onrender.com'); // Ensure backend is running on this URL
     allProducts = await response.json(); // Parse JSON data and store
     displayProducts(allProducts); // Display all products initially
   } catch (error) {
