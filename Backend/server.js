@@ -6,6 +6,10 @@ const cors = require('cors');
 const app = express();
 const PORT = 5000;
 
+app.use(cors({
+    origin: 'https://ptreddy-95.github.io'
+}));
+
 // Middleware
 app.use(cors()); // Enable CORS
 app.use(express.json()); // Parse JSON bodies
